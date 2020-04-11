@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Design Website</title>
+
+
+	<!-- Bootstrap 4 css link -->
+	<link 
+		rel="stylesheet" 
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+		crossorigin="anonymous">
+
+	<link 
+		href="style.css" 
+		rel="stylesheet">
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+
+			<div class="navbar-brand mb-0 h1">My Bootstrap Website</div>
+			
+			<!-- Button to expand collapsed items in mobile mode -->
+			<button 
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Navbar contents that are colapse on resize -->
+			<div 
+				class="collapse navbar-collapse" 
+				id="navbarResponsive">
+				
+				<!-- Text that can be put on the navbar -->
+				<!-- <span class="navbar-text ml-auto">
+					The Only Place You Will Ever Need!
+				</span> -->
+
+				<!-- ml-auto will push the contents to the right -->
+				<div class="navbar-nav ml-auto">
+					<a href="#" class="nav-item nav-link">Login</a>
+					<a href="#" class="nav-item nav-link">Register</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<!--- Image Slider -->
+	<div 
+		id="slides"
+		class="carousel slide"
+		data-ride="carousel">
+	
+		<!-- Lines at the bottom of carousel to navigate to slide -->
+		<ul class="carousel-indicators">
+			<li data-target="#slides" data-slide-to="0" class="active"></li>
+			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
+		</ul>
+		
+		<!-- Carousel Images  -->
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-interval="2000">
+				<img class="d-block w-100" src="img/slide1.png">
+				<div class="carousel-caption d-none d-md-block">
+					<h2 class="display-4">Made With Bootstrap</h2>
+					<button class="btn btn-outline-light btn-lg">Login</button>
+					<button class="btn btn-outline-dark btn-lg">Register</button>
+				</div>
+			</div>
+			<div class="carousel-item" data-interval="2000">
+				<img class="d-block w-100" src="img/slide2.png">
+			</div>
+			<div class="carousel-item" data-interval="2000">
+				<img class="d-block w-100" src="img/slide3.png">
+			</div>
+		</div>
+	</div>
+
+	<!--- Jumbotron -->
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-9 col-lg-9">
+					<div class="lead">A sample website completely designed using Bootstrap 4 and CSS.</div>
+				</div>
+				<div class="col-xs-12 col-md-3 col-lg-3">
+					<a href="https://getbootstrap.com/"><button class="btn btn-outline-secondary btn-lg ">Learn More</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--- Welcome Section -->
+	<div class="container-fluid">
+		<div class="row welcome text-center">
+			<div class="col-12">
+				<p class="heading display-4">Front End Frameworks</p>
+				
+			</div>
+			<hr class="my-4">
+			<div class="col-12">
+				<p class="lead">Front End deevlopment is more fun than ever today thanks to these... </p>
+			</div>
+		</div>
+	</div>
+
+	<!--- Three Column Section with Cards-->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card card-angular">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" style="width:50%; height:50%;" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">Angular</h4>
+						<p class="card-text">Angular is one of the most popular Front-End Frameworks developed at Google</p>
+						<a href="https://angular.io/"><button class="btn btn-outline-dark">Learn More</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card card-react">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" style="width:70%; height:70%;" class="card-img-top">
+					<div class="card-body">
+						<h4 class="card-title">React</h4>
+						<p class="card-text">React is very popular Front-End Framework developed at Facebook</p>
+						<a href="https://reactjs.org/"><button class="btn btn-outline-dark">Learn More</button></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<div class="card card-vue">
+					<div class="card-body">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png" style="height:65%; width:65%;" class="card-img-top">
+						<h4 class="card-title">Vue</h4>
+						<p class="card-text">Vue is a light-weight Front-End Framework developed at by Evan You</p>
+						<a href="https://vuejs.org/"><button class="btn btn-outline-dark">Learn More</button></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--- Two Column Section -->
+
+
+<!--- Fixed background -->
+
+
+<!--- Emoji Section -->
+
+  
+<!--- Meet the team -->
+
+
+<!--- Cards -->
+
+
+<!--- Two Column Section -->
+
+
+<!--- Connect -->
+
+
+<!--- Footer -->
+
+
+
+
+</body>
+
+
+	<!-- Javascript and JQuery links -->
+	<script 
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+		crossorigin="anonymous">
+	</script>
+	<script 
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+		crossorigin="anonymous">
+	</script>
+	<script 
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+		crossorigin="anonymous">
+	</script>
+	
+	
+</html>
+
+
+
+
+
+
+
+
